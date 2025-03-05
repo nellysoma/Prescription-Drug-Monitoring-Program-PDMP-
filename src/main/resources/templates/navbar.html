@@ -1,0 +1,56 @@
+<div th:fragment="navbar">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">VERITAS Prescription Drug Monitoring System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="test.jsp" th:href="@{/upload_train_data_set}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="test.jsp" th:href="@{/upload_test_data_set}">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="check.jsp" th:href="@{/check_model}">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-success me-2" href="" th:href="@{/signup}">Sign Up</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-success" href="">Login</a>
+                        </li>
+                        
+<!--                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>-->
+                        <!--          <li class="nav-item">
+                                    <a class="nav-link" href="prevention.jsp">Prevention</a>
+                                  </li>-->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for Books, Authors, or Genres" aria-label="Search">
+                        <button class="btn btn-sm btn-primary" type="submit">Search</button>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+
